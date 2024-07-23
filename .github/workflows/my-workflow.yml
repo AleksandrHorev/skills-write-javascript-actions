@@ -11,5 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: test
+        run: "npm install --save request request-promise @actions/core"
       - name: ha-ha
         uses: ./.github/actions/joke-action
